@@ -5,6 +5,7 @@ const gen = n => {
 
   for (let i = 0; i < n; ++i) {
     data.push({
+      bin: i,
       value: Math.max(10, Math.floor(Math.random() * 100))
     })
   }
