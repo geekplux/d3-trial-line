@@ -1,0 +1,34 @@
+{
+  "name": "d3-trial-line",
+  "version": "0.0.1",
+  "description": "D3 trial line chart",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js",
+    "test": "test",
+    "install": "npm run build"
+  },
+  "keywords": [
+    "d3",
+    "line",
+    "chart",
+    "visualization"
+  ],
+  "author": {
+    "name": "geekplux",
+    "email": "geekplux@gmail.com",
+    "url": "github.com/geekplux"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  },
+  "dependencies": {
+    "d3": "^4.2.2"
+  }
+}
