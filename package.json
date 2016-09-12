@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.prod.js",
     "test": "test",
-    "install": "npm run build"
+    "install": "npm run build",
+    "postpublish": "VERSION=`node -e 'console.log(require(\"./package.json\").version)'`; git push && git push --tags"
   },
   "keywords": [
     "d3",
