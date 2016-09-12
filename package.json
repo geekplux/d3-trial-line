@@ -1,6 +1,6 @@
 {
   "name": "d3-trial-line",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "D3 trial line chart",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "email": "geekplux@gmail.com",
     "url": "github.com/geekplux"
   },
+  "repository": "geekplux/d3-trial-line",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.14.0",

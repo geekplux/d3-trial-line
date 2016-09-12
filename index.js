@@ -133,7 +133,6 @@ export default class Line {
    */
 
   renderLine (data) {
-    console.log(data)
     const { xScale, yScale, stroke, fill } = this
 
     xScale.domain(d3extent(data, d => d.bin))
