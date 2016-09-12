@@ -126,6 +126,22 @@ export default class Line {
 
   renderAxis (data) {
     if (!this.enableAxis) return
+
+    const { xScale, yScale, xAxis, yAxis, axisPadding } = this
+    const [w, h] = this.dimensions()
+
+    xScale.domain(d3extent(data, d => d.bin))
+    yScale.domain(d3extent(data, d => d.value))
+
+    this.chart.append('g')
+      .attr('class', 'x axis')
+      .attr('transform', `translate(0, ${h + axisPadding})`)
+      .call(xAxis)
+
+    this.chart.append('g')
+      .attr('class', 'y axis')
+      .attr('transform', `translate(${-axisPadding}, 0)`)
+      .call(yAxis)
   }
 
   /**
