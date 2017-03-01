@@ -13,11 +13,15 @@ D3 line chart.
 npm install d3-trial-line
 ```
 
-### Development
+## Development
 
 ```
 npm start
 ```
+
+## Preview
+
+![](./preview/d3-trial-line.png)
 
 ### LICENSE
 
